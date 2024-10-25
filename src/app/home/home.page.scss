@@ -1,5 +1,3 @@
-@import "../../color-variables.scss";
-
 #container {
   text-align: center;
 
@@ -28,13 +26,18 @@
   text-decoration: none;
 }
 
+.container-header {
+  background-color: #090909;
+}
+
 .menu {
   font-size: 38px;
+  color: #fefefe;
 }
 
 .notifications {
   font-size: 17px;
-  color: $primary-text;
+  color: #f07d07;
 }
 
 .flex-center {
@@ -47,8 +50,8 @@
   width: 60%;
   height: 85%;
   border-radius: 50%;
-  background: $bg-circle-color;
-  box-shadow: -1px 2px 10px $bg-circle-color;
+  background: #040404;
+  box-shadow: -1px 2px 10px #040404;
 }
 
 .circle-internal {
@@ -58,8 +61,8 @@
   position: absolute;
   top: 12%;
   left: 60%;
-  background-color: $bg-circle-internal-color;
-  box-shadow: 0px 0px 5px $bg-circle-internal-color;
+  background-color: #7df0d3;
+  box-shadow: 0px 0px 5px #7df0d3;
 }
 
 .pt-20 {
@@ -68,13 +71,13 @@
 
 .header2 {
   height: 168px;
-  background-color: $bg-header2-color;
+  background-color: #202020;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
 }
 
 .color-row {
-  background-color: $bg-header2-color;
+  background-color: #202020;
 }
 
 .avatar {
@@ -108,14 +111,14 @@
 
 .roxo {
   font-size: 15px;
-  color: $nivel-text-pourple;
+  color: #7242e2;
   margin-top: 2px;
 }
 
 .nome-nivel {
   display: inline-grid;
   font-size: 20px;
-  font-family: sans-serif;
+  color: #fefefe;
 }
 
 .pt-20 {
@@ -128,7 +131,7 @@
 
 .content-header3 {
   padding: 13px;
-  background-color: $bg-header3-color;
+  background-color: #161616;
   margin-top: 15px;
   text-align: center;
   border-radius: 20px;
@@ -139,8 +142,8 @@
 }
 
 .accessibility {
-  color: $primary-text;
-  border: 1px solid $primary-text;
+  color: #f07d07;
+  border: 1px solid #f07d07;
   border-radius: 50%;
   padding: 3px;
   margin: 2px;
@@ -148,13 +151,13 @@
 
 .my-body {
   font-size: 11px;
-  color: $primary-text;
+  color: #f07d07;
   margin-right: 8px;
 }
 
 .trophy {
-  color: $primary-text;
-  border: 1px solid $primary-text;
+  color: #f07d07;
+  border: 1px solid #f07d07;
   border-radius: 50%;
   padding: 3px;
   margin: 2px;
@@ -162,7 +165,12 @@
 
 .obj-conq {
   font-size: 11px;
-  color: $primary-text;
+  color: #f07d07;
+}
+
+.container-content {
+  background-color: #090909;
+  padding-left: 40px;
 }
 
 .card-container {
@@ -170,7 +178,6 @@
   overflow-x: auto;
   padding: 0 16px 16px 16px;
   scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
 }
 
 .overlay {
@@ -179,22 +186,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.82);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 30%;
 }
 
 ion-card {
+  position: relative;
   flex: 0 0 auto;
-  width: 80%; // Ajuste conforme necessário
+  width: 80%;
   margin-right: 16px;
   scroll-snap-align: start;
   border-radius: 20px;
+  background-color: #090909;
 }
 
 .card-container::-webkit-scrollbar {
   display: none;
+  background-color: black;
 }
 
 .principal {
@@ -202,7 +213,7 @@ ion-card {
 }
 
 .personal-online {
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 5px;
   font-size: 20px;
   font-weight: 700;
@@ -213,11 +224,12 @@ ion-card {
 
 .text-personal {
   font-size: 23px;
+  color: #fefefe;
 }
 
 .add-outline {
-  color: $primary-text;
-  border: 1px solid $primary-text;
+  color: #f07d07;
+  border: 1px solid #f07d07;
   border-radius: 50%;
   padding: 3px;
   margin-left: 8px;
@@ -229,17 +241,15 @@ ion-card {
   border: 2px solid white;
   height: 190px;
   width: 285px;
+  background-color: #090909;
+  display: flex;
+  align-items: center;
 }
 
-.novo {
-  width: 22%;
-  height: 30%;
-  border-radius: 50%;
-  position: absolute;
-  top: 12%;
-  left: 60%;
-  background-color: $bg-circle-internal-color;
-  box-shadow: 0px 0px 5px $bg-circle-internal-color;
+.text {
+  color: #cacaca;
+  font-size: 24px;
+  text-align: start;
 }
 
 .new {
@@ -252,13 +262,33 @@ ion-card {
   box-shadow: 0 0 8px #f07d07;
 }
 
-.text {
-  color: white;
-  font-size: 24px;
-  text-align: center;
+.icon-new {
+  color: #cacaca;
+  font-size: 50px;
+
 }
 
-.icon-new {
-  color: white;
-  font-size: 20px;
+.rectangle-orange {
+  width: 90px;
+  height: 80px;
+  background-color: #251607;
+  border-radius: 30%;
+  margin: 30px 90px 50px 20px;
+}
+
+.text-final {
+  color: #272727;;
+  font-size: 23px;
+  text-align: start;
+}
+
+.conteudo-final {
+  border-radius: 20px ;
+  border: 2px solid #272727;
+  height: 190px;
+  width: 285px;
+  background-color: #090909;
+  display: flex;
+  align-items: center;
+  color: #272727;
 }
