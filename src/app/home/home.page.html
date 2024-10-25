@@ -27,25 +27,61 @@
         </div>
       </ion-col>
     </ion-row>
+
     <div class="header3">
       <ion-row>
-        <ion-col size="2"></ion-col>
-        <ion-col size="8.5" class="content-header3">
-          <ion-icon name="accessibility" class="accessibility"></ion-icon>
-          <span class="my-body">MEU CORPO</span>
-          <ion-icon name="trophy" class="trophy"></ion-icon>
-          <span class="obj-conq">OBJETIVOS E CONQUISTAS</span>
-        </ion-col>
-        <ion-col size="2.5"></ion-col>
-      </ion-row>
+        <ion-col size="12" class="flex-center">
+          <div class="content-header3">
+            <ion-icon name="accessibility" class="accessibility"></ion-icon>
+            <span class="my-body">MEU CORPO</span>
+            <ion-icon name="trophy" class="trophy"></ion-icon>
+            <span class="obj-conq">OBJETIVOS E CONQUISTAS</span>
+          </div>
 
+        </ion-col>
+
+      </ion-row>
     </div>
   </div>
-
-
-
 </ion-header>
 
 <ion-content>
+  <div class="principal">
+    <div class="personal-online">
+      <span class="text-personal">PERSONAL ONLINE</span>
+      <ion-icon name="add-outline" class="add-outline"></ion-icon>
+    </div>
 
+    <div class="card-container">
+      <ion-card style="position: relative;" class="ion-no-margin" *ngFor="let image of images">
+        <img [src]="image.url" />
+        <div class="overlay">
+          <ion-icon name="add-circle-outline" class="icon-new"></ion-icon>
+          <span class="text">NOVO TREINO</span>
+        </div>
+      </ion-card>
+    </div>
+
+
+
+    <div class="personal-online">
+      <span class="text-personal">PROGRAMAS</span>
+      <span class="new">NOVO</span>
+    </div>
+    <div class="card-container">
+      <ion-card class="ion-no-margin" *ngFor="let image of images">
+        <img [src]="image.url" />
+      </ion-card>
+    </div>
+
+    <div class="personal-online">
+      <span class="text-personal">CONTEÚDOS</span>
+      <ion-icon name="add-outline" class="add-outline"></ion-icon>
+    </div>
+    <div class="card-container">
+      <ion-card class="ion-no-margin conteudo" *ngFor="let item of [1, 2]">
+
+      </ion-card>
+    </div>
+    </div>
 </ion-content>

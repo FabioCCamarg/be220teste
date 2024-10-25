@@ -6,10 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  images = [
+    { url: '/assets/imgs/card1.jpg'},
+    { url: '/assets/imgs/card2.jpg'}
+  ];
 
-  // logoHeader: string;
   constructor() {
-    // this.logoHeader = "src/assets/logo-header.png";
+
   }
 
 }
